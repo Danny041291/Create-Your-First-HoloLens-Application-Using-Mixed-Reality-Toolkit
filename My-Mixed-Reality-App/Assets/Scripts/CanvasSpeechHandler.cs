@@ -1,21 +1,20 @@
-﻿
-using Microsoft.MixedReality.Toolkit.Input;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class CanvasSpeechHandler : MonoBehaviour, IMixedRealitySpeechHandler
+    public class CanvasSpeechHandler : MonoBehaviour
     {
 
         public TextMeshProUGUI Message;
 
-        public void OnSpeechKeywordRecognized(SpeechEventData eventData)
+        public void OnKeyboardKeywordRecognized()
         {
-            if(eventData.Command.KeyCode == KeyCode.Alpha4)
-            {
-                Message.text = "Hello there!";
-            }
+#if UNITY_EDITOR
+            Message.text = "No available on editor.";
+#elif UNITY_WSA
+              Message.text = TouchScreenKeyboard.Open(string.Empty, TouchScreenKeyboardType.Default, false, false, false, false);
+#endif
         }
 
     }

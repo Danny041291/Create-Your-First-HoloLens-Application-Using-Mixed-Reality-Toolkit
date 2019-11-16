@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCustomProfile: 1
   startBehavior: 0
-  recognitionConfidenceLevel: 1
+  recognitionConfidenceLevel: 2
   speechCommands:
   - localizationKey: 
     keyword: Menu
@@ -45,7 +45,7 @@ MonoBehaviour:
       description: Toggle Profiler
       axisConstraint: 0
   - localizationKey: 
-    keyword: Hello
+    keyword: Keyboard
     keyCode: 52
     action:
       id: 0
