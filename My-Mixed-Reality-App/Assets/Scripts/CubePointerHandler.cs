@@ -6,8 +6,6 @@ public class CubePointerHandler : MonoBehaviour, IMixedRealityPointerHandler
 
     public Material OnPointerDownMaterial;
     public Material OnPointerUpMaterial;
-    public Material OnPointerClickedMaterial;
-    public Material OnPointerDraggedMaterial;
 
     public void OnPointerDown(MixedRealityPointerEventData eventData)
     {
@@ -19,17 +17,8 @@ public class CubePointerHandler : MonoBehaviour, IMixedRealityPointerHandler
         gameObject.GetComponent<MeshRenderer>().material = OnPointerUpMaterial;
     }
 
-    public void OnPointerClicked(MixedRealityPointerEventData eventData)
-    {
-        /* Decomment the code below to test OnPointerClicked event */
-        // gameObject.GetComponent<MeshRenderer>().material = OnPointerClickedMaterial;
-    }
+    public void OnPointerClicked(MixedRealityPointerEventData eventData) { }
 
-    public void OnPointerDragged(MixedRealityPointerEventData eventData)
-    {
-        /* Decomment the code below to test OnPointerDragged event */
-        // gameObject.GetComponent<MeshRenderer>().material = OnPointerDraggedMaterial;
-    }
-
+    public void OnPointerDragged(MixedRealityPointerEventData eventData) { }
 
 }
