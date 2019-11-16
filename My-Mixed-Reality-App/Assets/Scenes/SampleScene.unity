@@ -853,7 +853,7 @@ GameObject:
   - component: {fileID: 2080440022}
   - component: {fileID: 2080440026}
   - component: {fileID: 2080440021}
-  - component: {fileID: 2080440029}
+  - component: {fileID: 2080440027}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -989,7 +989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 1
---- !u!114 &2080440029
+--- !u!114 &2080440027
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -998,28 +998,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2080440020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7e736ec19b1c5543a9bb27c150f94fb, type: 3}
+  m_Script: {fileID: 11500000, guid: bedb3ee436e96df40ac9f4a61e2e2af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFocusRequired: 1
-  MarkEventsAsUsed: 0
-  OnPointerDown:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Microsoft.MixedReality.Toolkit.Input.PointerUnityEvent, Microsoft.MixedReality.Toolkit.SDK,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnPointerUp:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Microsoft.MixedReality.Toolkit.Input.PointerUnityEvent, Microsoft.MixedReality.Toolkit.SDK,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnPointerClicked:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Microsoft.MixedReality.Toolkit.Input.PointerUnityEvent, Microsoft.MixedReality.Toolkit.SDK,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnPointerDragged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Microsoft.MixedReality.Toolkit.Input.PointerUnityEvent, Microsoft.MixedReality.Toolkit.SDK,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnPointerDownMaterial: {fileID: 2100000, guid: f8634526763016f4ebc53b8b14a301ef,
+    type: 2}
+  OnPointerUpMaterial: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  OnPointerClickedMaterial: {fileID: 2100000, guid: 1367c5dba53c2f94f95d3c36d4be6bfc,
+    type: 2}
+  OnPointerDraggedMaterial: {fileID: 2100000, guid: 1c1ae87e65e66e14fbd80ac24db920f7,
+    type: 2}
